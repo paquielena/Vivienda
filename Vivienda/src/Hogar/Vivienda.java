@@ -11,7 +11,14 @@ package Hogar;
  */
 public class Vivienda {
 
-    
+    /**
+     * @param precio
+     * @param numHabitaciones
+     * @param superficie
+     * @param parking
+     * @param estado
+     * @param propietario 
+     */
     private double precio;
     private int numHabitaciones;
     private double superficie;
@@ -19,6 +26,16 @@ public class Vivienda {
     private String estado;
     private String propietario;
 
+    /*
+    * Constructor de Vivienda con los parametros:
+    * @param precio
+    * @param numHabitaciones
+    * @param superficie
+    * @param parking
+    * @param estado
+    * @param propietario   
+    */
+    
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
         this.numHabitaciones = numHabitaciones;
@@ -28,7 +45,7 @@ public class Vivienda {
         this.propietario = propietario;
     }
     
-    /**
+    /** 
      * @return the precio
      */
     public double getPrecio() {
@@ -105,18 +122,22 @@ public class Vivienda {
         return propietario;
     }
 
-    /**
+    /** 
      * @param propietario the propietario to set
      */
     public void setPropietario(String propietario) {
         this.propietario = propietario;
     }
-    
+    /*
+    * Constructor con un solo parametro @param precio de Vivienda
+    */
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
-    
+    /**
+     * cambia el valor del precio por el precio menos el @param descuento. 
+     */
     public void actualizarPrecio(double descuento)
     {
         setPrecio(getPrecio() - getPrecio() * descuento);
