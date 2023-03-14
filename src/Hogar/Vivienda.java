@@ -11,19 +11,47 @@ package Hogar;
  */
 public class Vivienda {
 
+    /**
+     * atributo "precio", de tipo double.
+     */
     private double precio;
+    /**
+     * atributo "numHabitaciones", de tipo int.
+     */
     private int numHabitaciones;
+    /**
+     * atributo "superficie", de tipo double.
+     */
     private double superficie;
+    /**
+     * atributo "parking", de tipo boolean.
+     */
     private boolean parking;
+    /**
+     * atributo "estado", de tipo String.
+     */
     private String estado;
+    /**
+     * atributo "propietario", de tipo String.
+     */
     private String propietario;
     
-    
+    /**
+     * constructor con un parámetro únicamente, el precio.
+     */
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
-
+    /**
+     * constructor con seis parámetros, uno para cada atributo.
+     * @param precio
+     * @param numHabitaciones
+     * @param superficie
+     * @param parking
+     * @param estado
+     * @param propietario 
+     */
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
         this.numHabitaciones = numHabitaciones;
@@ -35,89 +63,91 @@ public class Vivienda {
     
     
     /**
-     * @return the precio
+     * método para obtener el precio.
      */
     public double getPrecio() {
         return precio;
     }
 
     /**
-     * @param precio the precio to set
+     * método para modificar el precio.
      */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
     /**
-     * @return the numHabitaciones
+     * método para obtener el numero de habitaciones.
      */
     public int getNumHabitaciones() {
         return numHabitaciones;
     }
 
     /**
-     * @param numHabitaciones the numHabitaciones to set
+     * método para modificar el número de habitaciones.
      */
     public void setNumHabitaciones(int numHabitaciones) {
         this.numHabitaciones = numHabitaciones;
     }
 
     /**
-     * @return the superficie
+     * método para obtener la superficie.
      */
     public double getSuperficie() {
         return superficie;
     }
 
     /**
-     * @param superficie the superficie to set
+     * método para modificar la superficie.
      */
     public void setSuperficie(double superficie) {
         this.superficie = superficie;
     }
 
     /**
-     * @return the parking
+     * método para obtener si tiene parking.
      */
     public boolean isParking() {
         return parking;
     }
 
     /**
-     * @param parking the parking to set
+     * método para modificar si tiene parking.
      */
     public void setParking(boolean parking) {
         this.parking = parking;
     }
 
     /**
-     * @return the estado
+     * método para obtener el estado.
      */
     public String getEstado() {
         return estado;
     }
 
     /**
-     * @param estado the estado to set
+     * método para modificar el estado.
      */
     public void setEstado(String estado) {
         this.estado = estado;
     }
 
     /**
-     * @return the propietario
+     * método para obtener el propietario.
      */
     public String getPropietario() {
         return propietario;
     }
 
     /**
-     * @param propietario the propietario to set
+     * método para modificar el propietario.
      */
     public void setPropietario(String propietario) {
         this.propietario = propietario;
     }
-    
+    /**
+     * método para actualizar el precio con el descuento.
+     */
     public void actualizarPrecio(int descuento)
     {
         setPrecio(getPrecio() - getPrecio() * (descuento /100));
