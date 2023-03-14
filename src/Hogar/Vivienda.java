@@ -10,13 +10,37 @@ package Hogar;
  * @author paqui
  */
 public class Vivienda {
-    
+   /**
+    * Atributo precio de la vivienda.Tipo double
+    */
     private double precio;
+    /**
+    * Atributo numHabitaciones de la vivienda.Tipo int
+    */
     private int numHabitaciones;
+    /**
+    * Atributo superficie de la vivienda.Tipo double
+    */
     private double superficie;
+    /**
+    * Atributo parking de la vivienda.Tipo boolean
+    */
     private boolean parking;
+    /**
+    * Atributo estado de la vivienda.Tipo string
+    */
     private String estado;
+    /**
+    * Atributo propietario+
+    * de la vivienda.Tipo string
+    */
     private String propietario;
+    
+    /**
+    * Constructor con 1 paramentro
+    * Crea objetos Vivienda con precio
+    * @param precio
+    */
     
     public Vivienda (double precio)
     {
@@ -25,7 +49,31 @@ public class Vivienda {
     
     public void actualizarPrecio(double descuento)
     {
+        /**
+         * @param precio primer numero real
+         * @param descuento segundo numero real
+         */
         precio = precio - precio * descuento;
+    }
+        /**
+    * Constructor con 6 paramentro
+    * Crea objetos Vivienda con precio,numHabitaciones,superficie,parking,estado y propietario
+    * @param precio, 
+    * @param Vivienda
+    * @param numHabitaciones
+    * @param superficie
+    * @param parking
+    * @param estado
+    * @param propietario.
+    */
+    
+    public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
+        this.precio = precio;
+        this.numHabitaciones = numHabitaciones;
+        this.superficie = superficie;
+        this.parking = parking;
+        this.estado = estado;
+        this.propietario = propietario;
     }
 
     public void setPrecio(double precio) {
@@ -75,15 +123,8 @@ public class Vivienda {
     public String getPropietario() {
         return propietario;
     }
+    
 
-    public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
-        this.precio = precio;
-        this.numHabitaciones = numHabitaciones;
-        this.superficie = superficie;
-        this.parking = parking;
-        this.estado = estado;
-        this.propietario = propietario;
-    }
     
     
     
