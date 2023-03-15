@@ -3,13 +3,15 @@ package Hogar;
 
 /**
  *
- * @author paqui
+ * @author paqui,jorge
+ * 
  */
 public class Hogar {
 
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) 
     {
         Vivienda casa1 = new Vivienda(120000);
