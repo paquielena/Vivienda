@@ -1,18 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+
+/**
+ *<h2>Clase vivienda que esta diseñado para meter las caracteristicas de una vienda junto a un propietario
+ * </h2>
+ * @version v1.0.1
+ * @since 15/03/2023
+ * @author  Adrian 
  */
+ 
 package Hogar;
 
 /**
  *
- * @author paqui
+ * @author Adrian
  */
 public class Vivienda {
 
     /**
-     * @return the precio
+     * @return con este metodo devolvemos el valor actual del precio
      */
     public double getPrecio()
     {
@@ -20,7 +24,7 @@ public class Vivienda {
     }
 
     /**
-     * @param precio the precio to set
+     * @param precio con el metodo setPrecio podemos cambiar el valor del atributo precio
      */
     public void setPrecio(double precio)
     {
@@ -28,7 +32,7 @@ public class Vivienda {
     }
 
     /**
-     * @return the numHabitaciones
+     * @return este metodo devuelve el numero actual de habitaciones
      */
     public int getNumHabitaciones()
     {
@@ -36,7 +40,7 @@ public class Vivienda {
     }
 
     /**
-     * @param numHabitaciones the numHabitaciones to set
+     * @param numHabitaciones el metodo numHabitaciones podemos cambiar el valor del atributo numHabitaciones
      */
     public void setNumHabitaciones(int numHabitaciones)
     {
@@ -44,7 +48,7 @@ public class Vivienda {
     }
 
     /**
-     * @return the superficie
+     * @return este metodo devuelve la superficie actual 
      */
     public double getSuperficie()
     {
@@ -52,7 +56,7 @@ public class Vivienda {
     }
 
     /**
-     * @param superficie the superficie to set
+     * @param superficie con el metodo setSuperficie podemos modificar el valor de la superficie
      */
     public void setSuperficie(double superficie)
     {
@@ -60,7 +64,7 @@ public class Vivienda {
     }
 
     /**
-     * @return the parking
+     * @return con el metodo is parking devuelve si tiene parking o no 
      */
     public boolean isParking()
     {
@@ -68,7 +72,7 @@ public class Vivienda {
     }
 
     /**
-     * @param parking the parking to set
+     * @param parking con el metodo setParking podemos cambiar el valor entre true y false para poner si dispone la vivienda de parking o no 
      */
     public void setParking(boolean parking)
     {
@@ -76,7 +80,7 @@ public class Vivienda {
     }
 
     /**
-     * @return the estado
+     * @return devuelve el estado actual de la vivienda
      */
     public String getEstado()
     {
@@ -84,7 +88,7 @@ public class Vivienda {
     }
 
     /**
-     * @param estado the estado to set
+     * @param estado con este metodo se pouede cambiar el estado actual de la vivienda 
      */
     public void setEstado(String estado)
     {
@@ -92,7 +96,7 @@ public class Vivienda {
     }
 
     /**
-     * @return the propietario
+     * @return con este metodo podemos saber quien es el propietario de la vivienda en este momento
      */
     public String getPropietario()
     {
@@ -100,7 +104,7 @@ public class Vivienda {
     }
 
     /**
-     * @param propietario the propietario to set
+     * @param propietario con este metodo podemos asignar o cambiar el propietario de una vivienda 
      */
     public void setPropietario(String propietario)
     {
@@ -113,7 +117,9 @@ public class Vivienda {
     private boolean parking;
     private String estado;
     private String propietario;
-
+    /**
+    * Constructor que acepta 6 parametros que se le proporcina en el main para definir un objeto de tipo vivienda
+    */
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario)
     {
         this.precio = precio;
@@ -132,6 +138,11 @@ public class Vivienda {
     {
         this.precio = precio;
     }
+    
+    /**
+     * metodo a actualizar precio que realizar un cambio en el precio actual de la vivienda aplicandole un descuento introducido por el usuario del programa 
+     * @param descuento es el atributo que contiene el descuento a realizar sobre el precio de la vivienda 
+     */
     
     public void actualizarPrecio(double descuento)
     {
