@@ -22,76 +22,87 @@ package Hogar;
 public class Vivienda {
 
     /**
-     * @return the precio
+     * Esta método devuelve el valor del atributo precio
+     * @return el precio
      */
     public double getPrecio() {
         return precio;
     }
 
     /**
-     * @param precio the precio to set
+     * Este método modifica el valor del atributo precio y le asigna el valor introducido por paramatro
+     * @param precio el precio a asignar
      */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
     /**
-     * @return the numHabitaciones
+     * Esta método devuelve el valor del atributo numHabitaciones
+     * @return el numHabitaciones
      */
     public int getNumHabitaciones() {
         return numHabitaciones;
     }
 
     /**
-     * @param numHabitaciones the numHabitaciones to set
+     * Este método modifica el valor del atributo numHabitaciones y le asigna el valor introducido por paramatro
+     * @param numHabitaciones el numHabitaciones a asignar
      */
     public void setNumHabitaciones(int numHabitaciones) {
         this.numHabitaciones = numHabitaciones;
     }
 
     /**
-     * @return the superficie
+     * Esta método devuelve el valor del atributo superficie
+     * @return la superficie
      */
     public double getSuperficie() {
         return superficie;
     }
 
     /**
-     * @param superficie the superficie to set
+     * Este método modifica el valor del atributo superficie y le asigna el valor introducido por paramatro
+     * @param superficie la superficie a asignar
      */
     public void setSuperficie(double superficie) {
         this.superficie = superficie;
     }
 
     /**
-     * @return the parking
+     * Esta método devuelve el valor del atributo parking
+     * @return el parking
      */
     public boolean isParking() {
         return parking;
     }
 
     /**
-     * @param parking the parking to set
+     * Este método modifica el valor del atributo parking y le asigna el valor introducido por paramatro
+     * @param parking el parking a asignar
      */
     public void setParking(boolean parking) {
         this.parking = parking;
     }
 
     /**
-     * @return the estado
+     * Esta método devuelve el valor del atributo estado
+     * @return el estado
      */
     public String getEstado() {
         return estado;
     }
 
     /**
-     * @param estado the estado to set
+     * Este método modifica el valor del atributo estado y le asigna el valor introducido por paramatro
+     * @param estado el estado a asignar
      */
     public void setEstado(String estado) {
         this.estado = estado;
     }
 
     /**
+     * Esta método devuelve el valor del atributo propietario
      * @return the propietario
      */
     public String getPropietario() {
@@ -99,7 +110,8 @@ public class Vivienda {
     }
 
     /**
-     * @param propietario the propietario to set
+     * Este método modifica el valor del atributo propietario y le asigna el valor introducido por paramatro
+     * @param propietario el propietario a asignar
      */
     public void setPropietario(String propietario) {
         this.propietario = propietario;
