@@ -23,13 +23,17 @@ public class Hogar {
         boolean parking;
         String estado;
         String propietario;
-        
-        System.out.println("Precio: " + casa1.precio);
-        System.out.println("Número de habitaciones: "+ casa1.numHabitaciones);
-        System.out.println("Superficie en m2: " + casa1.superficie);
-        System.out.println("¿Dispone de parking?: " + casa1.parking);
-        System.out.println("Estado: "+ casa1.estado);
-        System.out.println("Propietario: "+ casa1.propietario);
+
+        imprimirVivienda(casa1);
+
+    }
+    public static void imprimirVivienda(Vivienda casa1) {
+        System.out.println("Precio: " + casa1.getPrecio());
+        System.out.println("Número de habitaciones: " + casa1.getNumHabitaciones());
+        System.out.println("Superficie en m2: " + casa1.getSuperficie());
+        System.out.println("¿Dispone de parking?: " + casa1.isParking());
+        System.out.println("Estado: " + casa1.getEstado());
+        System.out.println("Propietario: " + casa1.getPropietario());
     }
     
 }
