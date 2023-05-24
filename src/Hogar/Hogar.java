@@ -31,5 +31,13 @@ public class Hogar {
         System.out.println("Estado: "+ casa1.estado);
         System.out.println("Propietario: "+ casa1.propietario);
     }
-    
+    void imprimirVivienda(Vivienda casa1){
+        System.out.println("Precio: "+casa1.precio);
+        System.out.println("numero de habitaciones: "+ casa1.numHabitaciones);
+        System.out.println("Suerficie en m2: "+casa1.superficie);
+        System.out.println("¿dispone de parking?: "+casa1.parking);
+        System.out.println("Estado: "+casa1.estado);
+        System.out.println("Propietario "+casa1.propietario);
+        
+    }
 }
